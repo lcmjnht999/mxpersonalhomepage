@@ -19,6 +19,7 @@ window.SUPABASE_URL = "https://incjohmumdgnigyusecu.supabase.co";
 window.SUPABASE_PUBLISHABLE_KEY = "sb_publishable_Hmum1CymN2A9hD2wfJHXYQ_3pnywARX";
 
 /* 当前网站版本号：提交反馈时会自动附带，方便按版本分析反馈。
-   每次发布新版本时改这里即可，例如 "V1" → "V2" → "V3" → "V4"。
-   V4 = 真实个人信息 + 最终视觉风格（深蓝商务 · 中英双语）。 */
-window.SITE_VERSION = "V4";
+   每次发布新版本时改这里即可，例如 "V1" → "V2" → "V3" → "V4" → "V5"。
+   V4 = 真实个人信息 + 最终视觉风格（深蓝商务 · 中英双语）。
+   V5 = 在 V4 之上新增「数字分身」（三个固定问题的问答）。 */
+window.SITE_VERSION = "V5";

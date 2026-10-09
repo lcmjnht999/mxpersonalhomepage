@@ -159,20 +159,22 @@
       </div>
     </section>
 
-    <!-- ===================== 数字分身 / 对话入口原型 ===================== -->
+    <!-- ===================== 数字分身（三个固定问题） ===================== -->
     <section class="section section--alt" id="twin">
       <div class="container">
         <header class="section__head">
-          <h2 class="section__title">数字分身 · 对话入口原型<span class="en">Digital Twin</span></h2>
-          <p class="section__subtitle">当前阶段先做静态占位，后续版本再接入真实能力</p>
+          <h2 class="section__title">数字分身<span class="en">Digital Twin</span></h2>
+          <p class="section__subtitle">点下面的问题，我的分身会讲给你听</p>
         </header>
 
-        <div class="placeholder">
-          <p class="placeholder__title">对话功能正在路上</p>
-          <p class="placeholder__text">
-            这里将来会是我的数字分身入口。现在先放一个占位，保证结构完整。
-          </p>
-          <button class="btn btn--ghost" type="button" disabled>即将开放</button>
+        <div class="twin" id="twinApp">
+          <div class="twin__log" data-twin-log role="log" aria-live="polite" aria-label="与数字分身的对话"></div>
+
+          <div class="twin__quick" role="group" aria-label="常见问题">
+            <button type="button" class="twin__chip" data-twin-i="0">你是谁？</button>
+            <button type="button" class="twin__chip" data-twin-i="1">你的专业是什么？</button>
+            <button type="button" class="twin__chip" data-twin-i="2">你的兴趣和爱好？</button>
+          </div>
         </div>
       </div>
     </section>
@@ -281,5 +283,7 @@
   <script src="js/supabase-config.js"></script>
   <script src="js/main.js"></script>
   <script src="js/feedback.js"></script>
+  <!-- 数字分身：三个固定问题 + 预设回答，纯前端无依赖 -->
+  <script src="js/twin.js"></script>
 </body>
 </html>
