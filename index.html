@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="个人主页：介绍我是谁、做过什么、如何联系我。" />
+  <title>你的名字 · 个人主页</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- ===================== 顶部导航 ===================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="回到顶部">
+        <span class="brand__badge" aria-hidden="true">你</span>
+        <!-- TODO: 换成你的名字 -->
+        <span class="brand__name">你的名字</span>
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="sr-only">展开菜单</span>
+      </button>
+
+      <nav class="nav__menu" id="navMenu" aria-label="主导航">
+        <a href="#about">关于我</a>
+        <a href="#projects">项目与作品</a>
+        <a href="#skills">兴趣与技能</a>
+        <a href="#contact">联系我</a>
+        <button class="btn btn--primary btn--sm" type="button" data-open-feedback>留下反馈</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ===================== Hero 首屏 ===================== -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <p class="hero__eyebrow">个人主页 · V1 首个可预览版本</p>
+        <!-- TODO: 换成你的名字 -->
+        <h1 class="hero__title">你好，我是<strong>你的名字</strong></h1>
+        <!-- TODO: 一句话介绍你自己 -->
+        <p class="hero__lead">
+          一句话介绍你自己：例如「天津大学 XX 专业学生，关注 XX 方向，喜欢把想法做成看得见的产品」。
+        </p>
+
+        <ul class="chips" aria-label="个人标签">
+          <!-- TODO: 换成你的真实标签 -->
+          <li class="chip">标签一</li>
+          <li class="chip">标签二</li>
+          <li class="chip">标签三</li>
+        </ul>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#projects">看看我的作品</a>
+          <a class="btn btn--ghost" href="#contact">联系我</a>
+        </div>
+
+        <div class="hero__meta">
+          <!-- TODO: 换成你的真实所在城市 / 学校 -->
+          <span>所在城市：待填写</span>
+          <span>·</span>
+          <span>学校 / 单位：待填写</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 关于我 ===================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section__head">
+          <h2 class="section__title">关于我</h2>
+          <p class="section__subtitle">身份、方向、记忆点与所在城市</p>
+        </header>
+
+        <div class="grid grid--4">
+          <!-- TODO: 用真实信息替换下面四张卡片 -->
+          <article class="card">
+            <h3 class="card__title">我的身份</h3>
+            <p class="card__body">例如：本科生 / 研究生，所在专业与年级。</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title">我的方向</h3>
+            <p class="card__body">你正在关注或研究的方向，一两句话说明。</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title">一个记忆点</h3>
+            <p class="card__body">一件让你和别人不一样的小事，方便来访者记住你。</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title">所在城市</h3>
+            <p class="card__body">你常驻的城市，便于线下交流。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 项目与作品 ===================== -->
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <header class="section__head">
+          <h2 class="section__title">项目与作品</h2>
+          <p class="section__subtitle">每条给出简介与链接</p>
+        </header>
+
+        <div class="grid grid--3">
+          <!-- TODO: 换成你的真实项目；没有的可先删掉 -->
+          <article class="card card--project">
+            <h3 class="card__title">项目名称一</h3>
+            <p class="card__body">用一两句话说明这个项目解决了什么问题、你负责了什么。</p>
+            <a class="card__link" href="#" target="_blank" rel="noopener">查看项目 →</a>
+          </article>
+          <article class="card card--project">
+            <h3 class="card__title">项目名称二</h3>
+            <p class="card__body">用一两句话说明这个项目解决了什么问题、你负责了什么。</p>
+            <a class="card__link" href="#" target="_blank" rel="noopener">查看项目 →</a>
+          </article>
+          <article class="card card--project">
+            <h3 class="card__title">项目名称三</h3>
+            <p class="card__body">用一两句话说明这个项目解决了什么问题、你负责了什么。</p>
+            <a class="card__link" href="#" target="_blank" rel="noopener">查看项目 →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 兴趣与技能 ===================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <header class="section__head">
+          <h2 class="section__title">兴趣与技能</h2>
+          <p class="section__subtitle">让来访者更了解你</p>
+        </header>
+
+        <div class="grid grid--2">
+          <article class="card">
+            <h3 class="card__title">技能</h3>
+            <ul class="list">
+              <!-- TODO: 换成你真实的技能 -->
+              <li>技能一</li>
+              <li>技能二</li>
+              <li>技能三</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3 class="card__title">兴趣</h3>
+            <ul class="list">
+              <!-- TODO: 换成你真实的兴趣 -->
+              <li>兴趣一</li>
+              <li>兴趣二</li>
+              <li>兴趣三</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 数字分身 / 对话入口原型 ===================== -->
+    <section class="section section--alt" id="twin">
+      <div class="container">
+        <header class="section__head">
+          <h2 class="section__title">数字分身 · 对话入口原型</h2>
+          <p class="section__subtitle">V1 阶段先做静态占位，后续版本再接入真实能力</p>
+        </header>
+
+        <div class="placeholder">
+          <p class="placeholder__title">对话功能正在路上</p>
+          <p class="placeholder__text">
+            这里将来会是我的数字分身入口。现在先放一个占位，保证结构完整。
+          </p>
+          <button class="btn btn--ghost" type="button" disabled>即将开放</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 联系我 ===================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <header class="section__head">
+          <h2 class="section__title">联系我</h2>
+          <p class="section__subtitle">真实且可用的联系方式</p>
+        </header>
+
+        <div class="grid grid--2">
+          <article class="card">
+            <h3 class="card__title">邮箱</h3>
+            <!-- TODO: 换成你的真实邮箱 -->
+            <p class="card__body"><a href="mailto:your-email@example.com">your-email@example.com</a></p>
+          </article>
+          <article class="card">
+            <h3 class="card__title">其他方式</h3>
+            <!-- TODO: 换成真实的 GitHub / 微信 / 其他 -->
+            <p class="card__body"><a href="https://github.com/" target="_blank" rel="noopener">GitHub 主页</a></p>
+          </article>
+        </div>
+
+        <div class="cta">
+          <p>如果你看完有任何想法，欢迎留一条反馈，我会认真读。</p>
+          <button class="btn btn--primary" type="button" data-open-feedback>留下反馈</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== 页脚 ===================== -->
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p>© <span id="year">2026</span> 你的名字 · 保留所有权利</p>
+      <p class="footer__note">纯静态站点 · 反馈数据保存在 Supabase，仅本人可见</p>
+    </div>
+  </footer>
+
+  <!-- ===================== 反馈入口（悬浮按钮） ===================== -->
+  <button class="feedback-fab" id="feedbackFab" type="button" data-open-feedback aria-haspopup="dialog">
+    <span aria-hidden="true">💬</span>
+    <span class="feedback-fab__text">反馈</span>
+  </button>
+
+  <!-- ===================== 反馈弹窗 ===================== -->
+  <div class="modal" id="feedbackModal" role="dialog" aria-modal="true" aria-labelledby="feedbackTitle" hidden>
+    <div class="modal__backdrop" data-close-feedback></div>
+    <div class="modal__panel">
+      <header class="modal__head">
+        <h2 class="modal__title" id="feedbackTitle">留下你的反馈</h2>
+        <button class="modal__close" type="button" data-close-feedback aria-label="关闭">×</button>
+      </header>
+
+      <p class="modal__hint">反馈不会公开，只有我能看到。指出一个看不懂 / 不好找 / 不方便的位置就好。</p>
+
+      <form class="form" id="feedbackForm" novalidate>
+        <div class="form__row">
+          <label class="form__label" for="fbName">名字或昵称<span class="form__opt">（可选）</span></label>
+          <input class="form__input" id="fbName" name="name" type="text" maxlength="40" placeholder="怎么称呼你" />
+        </div>
+
+        <div class="form__row">
+          <label class="form__label" for="fbRelation">你与我的关系</label>
+          <select class="form__input" id="fbRelation" name="relation">
+            <option value="同学">同学</option>
+            <option value="老师">老师</option>
+            <option value="家人">家人</option>
+            <option value="朋友">朋友</option>
+            <option value="同事">同事</option>
+            <option value="其他">其他</option>
+            <option value="不便透露">不便透露</option>
+          </select>
+        </div>
+
+        <div class="form__row">
+          <label class="form__label" for="fbDevice">本条反馈针对的设备</label>
+          <select class="form__input" id="fbDevice" name="device">
+            <option value="电脑">电脑</option>
+            <option value="手机">手机</option>
+            <option value="平板">平板</option>
+            <option value="其他">其他</option>
+          </select>
+        </div>
+
+        <div class="form__row">
+          <label class="form__label" for="fbMessage">反馈内容<span class="form__req">*</span></label>
+          <textarea class="form__input form__textarea" id="fbMessage" name="message" rows="5"
+            maxlength="1000" required placeholder="描述具体位置、体验和问题"></textarea>
+        </div>
+
+        <p class="form__status" id="fbStatus" role="status" aria-live="polite"></p>
+
+        <div class="form__actions">
+          <button class="btn btn--primary" id="fbSubmit" type="submit">提交反馈</button>
+          <button class="btn btn--ghost" type="button" data-close-feedback>取消</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Supabase 官方客户端（UMD 全局构建，直接双击打开也能用） -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <!-- 前端配置：项目地址 + publishable key（可公开，切勿放入 secret key） -->
+  <script src="js/supabase-config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/feedback.js"></script>
+</body>
+</html>
