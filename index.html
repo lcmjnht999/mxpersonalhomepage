@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="个人主页：介绍我是谁、做过什么、如何联系我。" />
-  <title>你的名字 · 个人主页</title>
+  <meta name="description" content="许铭真的个人主页：脑机接口专业本科生，就读于天津大学 · 香港理工大学 · 深圳未来技术学院。跨学科探索者 · 写作者。探索，洞察，创造。" />
+  <title>许铭真 · 个人主页</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231e3a5f'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='26' font-weight='bold' fill='white' text-anchor='middle'%3EMX%3C/text%3E%3C/svg%3E" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -12,9 +13,8 @@
   <header class="site-header" id="siteHeader">
     <div class="container nav">
       <a class="brand" href="#top" aria-label="回到顶部">
-        <span class="brand__badge" aria-hidden="true">你</span>
-        <!-- TODO: 换成你的名字 -->
-        <span class="brand__name">你的名字</span>
+        <span class="brand__badge" aria-hidden="true">MX</span>
+        <span class="brand__name">许铭真</span>
       </a>
 
       <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
@@ -25,10 +25,10 @@
       </button>
 
       <nav class="nav__menu" id="navMenu" aria-label="主导航">
-        <a href="#about">关于我</a>
-        <a href="#projects">项目与作品</a>
-        <a href="#skills">兴趣与技能</a>
-        <a href="#contact">联系我</a>
+        <a href="#about">关于我<span class="en">About</span></a>
+        <a href="#projects">项目与作品<span class="en">Works</span></a>
+        <a href="#skills">兴趣与技能<span class="en">Skills</span></a>
+        <a href="#contact">联系我<span class="en">Contact</span></a>
         <button class="btn btn--primary btn--sm" type="button" data-open-feedback>留下反馈</button>
       </nav>
     </div>
@@ -38,20 +38,18 @@
     <!-- ===================== Hero 首屏 ===================== -->
     <section class="hero">
       <div class="container hero__inner">
-        <p class="hero__eyebrow">个人主页 · V1 首个可预览版本</p>
-        <!-- TODO: 换成你的名字 -->
-        <h1 class="hero__title">你好，我是<strong>你的名字</strong></h1>
-        <!-- TODO: 一句话介绍你自己 -->
+        <div class="hero__avatar" aria-hidden="true">MX</div>
+        <p class="hero__name-en">Emily</p>
+        <h1 class="hero__title">许铭真</h1>
+        <p class="hero__role">脑机接口 · 跨学科探索者 · 写作者</p>
         <p class="hero__lead">
-          一句话介绍你自己：例如「天津大学 XX 专业学生，关注 XX 方向，喜欢把想法做成看得见的产品」。
+          我是一名脑机接口专业的本科生，就读于天津大学 · 香港理工大学 · 深圳未来技术学院。
+          长期保持跨学科自学的习惯——文、理、工均有涉足，数学、物理、计算机、英语与语文是我持续投入的领域。
         </p>
-
-        <ul class="chips" aria-label="个人标签">
-          <!-- TODO: 换成你的真实标签 -->
-          <li class="chip">标签一</li>
-          <li class="chip">标签二</li>
-          <li class="chip">标签三</li>
-        </ul>
+        <p class="hero__tagline">
+          探索，洞察，创造。
+          <span class="hero__tagline-en">Explore · Insight · Create</span>
+        </p>
 
         <div class="hero__actions">
           <a class="btn btn--primary" href="#projects">看看我的作品</a>
@@ -59,10 +57,7 @@
         </div>
 
         <div class="hero__meta">
-          <!-- TODO: 换成你的真实所在城市 / 学校 -->
-          <span>所在城市：待填写</span>
-          <span>·</span>
-          <span>学校 / 单位：待填写</span>
+          <span>所在城市：深圳 · Shenzhen</span>
         </div>
       </div>
     </section>
@@ -71,27 +66,39 @@
     <section class="section" id="about">
       <div class="container">
         <header class="section__head">
-          <h2 class="section__title">关于我</h2>
-          <p class="section__subtitle">身份、方向、记忆点与所在城市</p>
+          <h2 class="section__title">关于我<span class="en">About Me</span></h2>
+          <p class="section__subtitle">我是谁 · 我如何做事 · 我相信什么 · 我在哪里读书</p>
         </header>
 
         <div class="grid grid--4">
-          <!-- TODO: 用真实信息替换下面四张卡片 -->
           <article class="card">
-            <h3 class="card__title">我的身份</h3>
-            <p class="card__body">例如：本科生 / 研究生，所在专业与年级。</p>
+            <h3 class="card__title">我是谁<span class="en">Who I Am</span></h3>
+            <p class="card__body">
+              脑机接口专业本科生，就读于天津大学 · 香港理工大学 · 深圳未来技术学院，
+              长期保持跨学科自学的习惯——文、理、工均有涉足。
+              对我而言，知识没有边界，只有等待被连接的点。
+            </p>
           </article>
           <article class="card">
-            <h3 class="card__title">我的方向</h3>
-            <p class="card__body">你正在关注或研究的方向，一两句话说明。</p>
+            <h3 class="card__title">我如何做事<span class="en">How I Work</span></h3>
+            <p class="card__body">
+              在科研项目中，我习惯承担把控方向、发挥创意的角色；比起热闹的讨论，
+              我更擅长安静而深度的协作。
+            </p>
           </article>
           <article class="card">
-            <h3 class="card__title">一个记忆点</h3>
-            <p class="card__body">一件让你和别人不一样的小事，方便来访者记住你。</p>
+            <h3 class="card__title">我相信什么<span class="en">What I Believe</span></h3>
+            <p class="card__body">
+              探索，然后洞察，最终创造。世界是一座庞大的素材库，
+              我想成为那个读懂它、并用自己的方式重新表达它的人。
+            </p>
           </article>
           <article class="card">
-            <h3 class="card__title">所在城市</h3>
-            <p class="card__body">你常驻的城市，便于线下交流。</p>
+            <h3 class="card__title">就读院校<span class="en">Education</span></h3>
+            <p class="card__body">
+              天津大学 · 香港理工大学 · 深圳未来技术学院，脑机接口专业本科生。
+              常驻深圳，欢迎线下交流。
+            </p>
           </article>
         </div>
       </div>
@@ -101,26 +108,18 @@
     <section class="section section--alt" id="projects">
       <div class="container">
         <header class="section__head">
-          <h2 class="section__title">项目与作品</h2>
+          <h2 class="section__title">项目与作品<span class="en">Selected Works</span></h2>
           <p class="section__subtitle">每条给出简介与链接</p>
         </header>
 
-        <div class="grid grid--3">
-          <!-- TODO: 换成你的真实项目；没有的可先删掉 -->
+        <div class="grid">
           <article class="card card--project">
-            <h3 class="card__title">项目名称一</h3>
-            <p class="card__body">用一两句话说明这个项目解决了什么问题、你负责了什么。</p>
-            <a class="card__link" href="#" target="_blank" rel="noopener">查看项目 →</a>
-          </article>
-          <article class="card card--project">
-            <h3 class="card__title">项目名称二</h3>
-            <p class="card__body">用一两句话说明这个项目解决了什么问题、你负责了什么。</p>
-            <a class="card__link" href="#" target="_blank" rel="noopener">查看项目 →</a>
-          </article>
-          <article class="card card--project">
-            <h3 class="card__title">项目名称三</h3>
-            <p class="card__body">用一两句话说明这个项目解决了什么问题、你负责了什么。</p>
-            <a class="card__link" href="#" target="_blank" rel="noopener">查看项目 →</a>
+            <h3 class="card__title">个人主页（多轮迭代项目）<span class="en">Personal Homepage</span></h3>
+            <p class="card__body">
+              用纯静态 HTML / CSS / JavaScript 搭建，接入 Supabase 收集访客反馈并发布到 GitHub Pages，
+              独立完成信息架构、视觉设计与前端实现，经过多轮迭代打磨。
+            </p>
+            <a class="card__link" href="https://lcmjnht999.github.io/mxpersonalhomepage/" target="_blank" rel="noopener">查看项目 →</a>
           </article>
         </div>
       </div>
@@ -130,27 +129,26 @@
     <section class="section" id="skills">
       <div class="container">
         <header class="section__head">
-          <h2 class="section__title">兴趣与技能</h2>
+          <h2 class="section__title">兴趣与技能<span class="en">Skills &amp; Interests</span></h2>
           <p class="section__subtitle">让来访者更了解你</p>
         </header>
 
-        <div class="grid grid--2">
-          <article class="card">
-            <h3 class="card__title">技能</h3>
+        <div class="grid grid--bento">
+          <article class="card bento__feature">
+            <h3 class="card__title">技能<span class="en">Skills</span></h3>
             <ul class="list">
-              <!-- TODO: 换成你真实的技能 -->
-              <li>技能一</li>
-              <li>技能二</li>
-              <li>技能三</li>
+              <li>跨学科自学（数学 · 物理 · 计算机 · 语言）</li>
+              <li>科研方向把控与创意</li>
+              <li>长篇小说写作</li>
             </ul>
           </article>
           <article class="card">
-            <h3 class="card__title">兴趣</h3>
+            <h3 class="card__title">兴趣<span class="en">Interests</span></h3>
             <ul class="list">
-              <!-- TODO: 换成你真实的兴趣 -->
-              <li>兴趣一</li>
-              <li>兴趣二</li>
-              <li>兴趣三</li>
+              <li>写作：偏爱博弈色彩下的悲剧叙事</li>
+              <li>音乐：情感细腻、力量感强的旋律</li>
+              <li>美食与风景：用味觉和眼睛收藏世界</li>
+              <li>故事收集：人群与远方的见闻都是素材</li>
             </ul>
           </article>
         </div>
@@ -161,8 +159,8 @@
     <section class="section section--alt" id="twin">
       <div class="container">
         <header class="section__head">
-          <h2 class="section__title">数字分身 · 对话入口原型</h2>
-          <p class="section__subtitle">V1 阶段先做静态占位，后续版本再接入真实能力</p>
+          <h2 class="section__title">数字分身 · 对话入口原型<span class="en">Digital Twin</span></h2>
+          <p class="section__subtitle">当前阶段先做静态占位，后续版本再接入真实能力</p>
         </header>
 
         <div class="placeholder">
@@ -179,20 +177,18 @@
     <section class="section" id="contact">
       <div class="container">
         <header class="section__head">
-          <h2 class="section__title">联系我</h2>
+          <h2 class="section__title">联系我<span class="en">Get in Touch</span></h2>
           <p class="section__subtitle">真实且可用的联系方式</p>
         </header>
 
         <div class="grid grid--2">
           <article class="card">
-            <h3 class="card__title">邮箱</h3>
-            <!-- TODO: 换成你的真实邮箱 -->
-            <p class="card__body"><a href="mailto:your-email@example.com">your-email@example.com</a></p>
+            <h3 class="card__title">GitHub</h3>
+            <p class="card__body"><a href="https://github.com/lcmjnht999" target="_blank" rel="noopener">github.com/lcmjnht999</a></p>
           </article>
           <article class="card">
-            <h3 class="card__title">其他方式</h3>
-            <!-- TODO: 换成真实的 GitHub / 微信 / 其他 -->
-            <p class="card__body"><a href="https://github.com/" target="_blank" rel="noopener">GitHub 主页</a></p>
+            <h3 class="card__title">反馈留言<span class="en">Feedback</span></h3>
+            <p class="card__body">点击右下角「反馈」按钮给我留言，只有我能看到。</p>
           </article>
         </div>
 
@@ -207,7 +203,7 @@
   <!-- ===================== 页脚 ===================== -->
   <footer class="site-footer">
     <div class="container footer__inner">
-      <p>© <span id="year">2026</span> 你的名字 · 保留所有权利</p>
+      <p>© <span id="year">2026</span> 许铭真 · 保留所有权利</p>
       <p class="footer__note">纯静态站点 · 反馈数据保存在 Supabase，仅本人可见</p>
     </div>
   </footer>
@@ -262,6 +258,7 @@
           <label class="form__label" for="fbMessage">反馈内容<span class="form__req">*</span></label>
           <textarea class="form__input form__textarea" id="fbMessage" name="message" rows="5"
             maxlength="1000" required placeholder="描述具体位置、体验和问题"></textarea>
+          <p class="form__counter" id="fbCounter">0 / 1000</p>
         </div>
 
         <p class="form__status" id="fbStatus" role="status" aria-live="polite"></p>
