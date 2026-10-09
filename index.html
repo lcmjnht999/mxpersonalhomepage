@@ -17,11 +17,15 @@
         <span class="brand__name">许铭真</span>
       </a>
 
-      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
-        <span class="nav__toggle-bar"></span>
-        <span class="nav__toggle-bar"></span>
-        <span class="nav__toggle-bar"></span>
-        <span class="sr-only">展开菜单</span>
+      <button class="nav__toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navMenu" aria-label="展开菜单">
+        <!-- 三条横线用内联 SVG 画：粗细与颜色写在 SVG 属性里，不依赖外部 CSS，任何情况下都能显示 -->
+        <svg class="nav__toggle-icon" width="22" height="22" viewBox="0 0 22 22" aria-hidden="true" focusable="false">
+          <g stroke="#1e3a5f" stroke-width="2" stroke-linecap="round">
+            <line class="nav__toggle-bar nav__toggle-bar--1" x1="1" y1="5" x2="21" y2="5" />
+            <line class="nav__toggle-bar nav__toggle-bar--2" x1="1" y1="11" x2="21" y2="11" />
+            <line class="nav__toggle-bar nav__toggle-bar--3" x1="1" y1="17" x2="21" y2="17" />
+          </g>
+        </svg>
       </button>
 
       <nav class="nav__menu" id="navMenu" aria-label="主导航">

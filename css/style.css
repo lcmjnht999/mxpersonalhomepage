@@ -250,21 +250,50 @@ p { margin: 0 0 1em; }
 .nav__toggle {
   display: none;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   gap: 5px;
   width: 44px;
-  height: 40px;
-  padding: 0 10px;
+  height: 44px;
+  padding: 0;
   background: transparent;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
   cursor: pointer;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.nav__toggle:hover,
+.nav__toggle:focus-visible {
+  border-color: var(--color-primary);
+  background: var(--color-soft);
+}
+
+/* 三条横线由内联 SVG 绘制：颜色与粗细写死在 SVG 属性里，
+   CSS 只负责尺寸和展开动画，避免再出现“框在、线条消失”的情况 */
+.nav__toggle-icon {
+  display: block;
+  width: 22px;
+  height: 22px;
 }
 
 .nav__toggle-bar {
-  height: 2px;
-  background: var(--color-primary);
-  border-radius: 2px;
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform 0.25s ease, opacity 0.2s ease;
+}
+
+/* 展开时收成 X，仍沿用同一套线条 */
+.nav__toggle[aria-expanded="true"] .nav__toggle-bar--1 {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.nav__toggle[aria-expanded="true"] .nav__toggle-bar--2 {
+  opacity: 0;
+}
+
+.nav__toggle[aria-expanded="true"] .nav__toggle-bar--3 {
+  transform: translateY(-6px) rotate(-45deg);
 }
 
 /* ---------------- 按钮 / 标签 ---------------- */
@@ -719,12 +748,12 @@ p { margin: 0 0 1em; }
   .grid--bento { grid-template-columns: minmax(0, 1fr); }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 900px) {
   .nav__toggle { display: flex; }
 
   .nav__menu {
     position: absolute;
-    top: var(--header-h);
+    top: 100%;
     left: 0;
     right: 0;
     flex-direction: column;
@@ -747,7 +776,9 @@ p { margin: 0 0 1em; }
   }
 
   .nav__menu a::after { display: none; }
+}
 
+@media (max-width: 720px) {
   .grid--2,
   .grid--3,
   .grid--4 { grid-template-columns: minmax(0, 1fr); }
